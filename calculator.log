@@ -1,0 +1,5 @@
+2023-03-21 16:35:03 INFO     [RESULT - Factorial] - 2
+2023-03-21 16:35:06 INFO     [Exit ] Program closed successfully by exec
+2023-03-21 16:39:07 ERROR    Value error is logged at fact.
+2023-03-21 16:39:07 ERROR    Value error is logged at natural log.
+2023-03-21 16:39:07 ERROR    Value error is logged at sqrt.
