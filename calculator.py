@@ -28,7 +28,7 @@ def power(x, y):
 
 def calculator():
     while True:
-        print("Choose Operations :")
+        print("Choose Operations from the following:")
         print("1. Square Root")
         print("2. Factorial")
         print("3. Natural Logarithm")
