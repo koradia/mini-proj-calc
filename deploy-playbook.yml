@@ -1,4 +1,3 @@
-#playbook
 ---
 - name: Deploy Docker Image to Container
   hosts: all
@@ -6,11 +5,15 @@
     ansible_python_interpreter: /usr/bin/python3
   tasks:
     - name: Remove Docker Container
-      #shell: docker kill $(docker ps -q)
-      shell: docker --version > ver.txt
+      docker_container:
+        name: calculator
+        image: krutik420/miniproj
+        state: absent
     - name: Remove Docker Image
-      shell: docker --version
-      #shell: docker rmi $(docker ps -a -q)
+      docker_image:
+        name: krutik420/miniproj
+        tag: latest
+        state: absent
     - name: Pull Docker Image
       docker_image:
         name: krutik420/miniproj
