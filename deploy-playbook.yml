@@ -13,7 +13,7 @@
     - name: Remove Docker Image
       docker_image:
         name: krutik420/miniproj
-        tag: latest
+          #       tag: latest
         state: absent
     - name: Pull Docker Image
       docker_image:
