@@ -7,7 +7,7 @@
   tasks:
     - name: Remove Docker Container
       #shell: docker kill $(docker ps -q)
-      shell: echo 'hello'
+      shell: docker --version > ver.txt
     - name: Remove Docker Image
       shell: docker --version
       #shell: docker rmi $(docker ps -a -q)
